@@ -1,0 +1,21 @@
+{
+  "name": "smit",
+  "version": "1.0.0",
+  "description": "backend",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm start",
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mongodb": "^6.16.0",
+    "nodemailer": "^6.10.1",
+    "nodemon": "^3.1.10"
+  }
+}
