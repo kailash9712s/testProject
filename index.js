@@ -6,11 +6,7 @@ import { router } from './src/Routes/route.js';
 const app = express();
 
 // ✅ Enable CORS for all routes
-app.use(cors({
-    origin: '*', // Replace * with your frontend URL in production, e.g., 'http://localhost:5500'
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    allowedHeaders: ['Content-Type']
-}));
+app.use(cors());
 
 app.use(express.json());
 app.use("/api/v1/user", router);
