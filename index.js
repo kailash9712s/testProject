@@ -5,9 +5,8 @@ import { router } from './src/Routes/route.js';
 
 const app = express();
 
-// ✅ Enable CORS for all routes
 app.use(cors({
-  origin: 'https://frontend-silk-nu-36.vercel.app', // or "*" for all origins (not recommended for production)
+  origin: '*',// frontend ki url daal dena. 
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true,
 }));
