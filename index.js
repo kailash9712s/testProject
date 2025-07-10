@@ -5,8 +5,13 @@ import { router } from './src/Routes/route.js';
 
 const app = express();
 
+const frontendUrl = [
+  'https://www.satshreesteel.in/',
+  'https://satshreesteel.in/'
+];
+
 app.use(cors({
-  origin: '*',// frontend ki url daal dena. 
+  origin: frontendUrl,
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true,
 }));
