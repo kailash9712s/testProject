@@ -6,8 +6,8 @@ import { router } from './src/Routes/route.js';
 const app = express();
 
 const frontendUrl = [
-  'https://www.satshreesteel.in/',
-  'https://satshreesteel.in/'
+  'https://www.satshreesteel.in',
+  'https://satshreesteel.in'
 ];
 
 app.use(cors({
